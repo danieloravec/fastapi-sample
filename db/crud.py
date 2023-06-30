@@ -4,12 +4,6 @@ from passlib.context import CryptContext
 from . import models, schemas
 
 
-# TODO hide, use .env
-SECRET_KEY = "73286341d5ef72d2aba7ae0a9fc6457442dc7e20f4d4f21e4641e02ef680d481"
-ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 15
-
-
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
