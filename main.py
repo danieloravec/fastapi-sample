@@ -19,11 +19,6 @@ def get_db():
         db.close()
 
 
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
-
-
 @app.post("/register")
 async def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)) -> schemas.User:
     db_user = crud.get_user_by_email(db, user.email)
