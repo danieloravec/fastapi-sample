@@ -1,8 +1,8 @@
 import requests
 from datetime import datetime, timedelta
 
-from config import settings
-from schemas import TatumApiEthTransaction
+from app.config import settings
+from app.schemas import TatumApiEthTransaction
 
 
 def tatum_api_headers():
