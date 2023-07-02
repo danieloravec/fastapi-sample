@@ -26,3 +26,6 @@
     - Otherwise the server might be stopping and you might be getting `503` 
 
 A sample deployment (Swagger) is accessible at: http://ec2co-ecsel-1llwg1jebg0p5-1045308539.eu-central-1.elb.amazonaws.com:8000/docs
+
+## Testing the API
+Just run `pytest` from the root project directory.
